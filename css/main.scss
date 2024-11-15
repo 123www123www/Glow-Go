@@ -1,0 +1,1025 @@
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Bold.ttf");
+    font-weight: 700;
+}
+$blu: #505E7F;
+$darkBlu: #363F55;
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #EEF2FF;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+	max-width: 1596px;
+	width: 100%;
+	margin: 0 auto;	
+}
+.menu {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    &__top {
+        width: 100%;
+        display: flex; 
+    }
+    &__item {
+        display: inline-block;
+        margin-right: 50px;
+        list-style: none;
+        &:first-child {
+            margin-right: 120px;
+        }
+        &:last-child {
+            margin-left: auto;
+            margin-right: 0;
+        }
+    }
+    &__link {
+        text-decoration: none;
+	    color: $darkBlu;
+	    font-size: clamp(16px, 2vw, 24px);
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        &:hover {
+            transition: color 0.3s ease-in-out;
+            color: $blu;
+        }
+    }
+}
+.intro {
+    margin-top: 60px;
+    &__box {
+        width: 1596px;
+        height: 805px;
+        background-image: url("../images/background/bgone.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    &__title {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        max-width: 748px;
+        line-height: 1;
+    }
+    &__actsent {
+        color: $darkBlu;
+    }
+    &__text {
+        position: absolute;
+        bottom: 45px;
+        left: 50px;
+        color: #FFFFFF;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+    }
+    &__btn {
+        background: none;
+        border: none;
+        position: absolute;
+        bottom: -70px;
+        right: 75px;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        &:active {
+    	    transform: scale(0.9);
+  	    }
+    }
+}
+.about {
+    margin-top: 100px;
+    &__box {
+        display: flex;
+    }
+    &__subtitle {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        max-width: 752px;
+        margin-top: 85px;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+    &__text {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        max-width: 465px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sec {
+        margin-left: 180px;
+    }
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 90px;
+        row-gap: 30px;
+    }
+    &__item {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    &__icon { 
+        margin-right: 42px;
+    }
+    &__note {
+        max-width: 162px;
+    }
+}
+.sale {
+    &__subtitle {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        margin-bottom: 55px;
+    }
+    &__box {
+        margin-top: 80px;
+        margin-bottom: 150px;
+    }
+    &__active {
+        display: flex;
+    }
+    &__slide {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 60px;
+    }
+    &__slid {
+        position: relative;
+        display: none;
+    }
+    &__text {
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        color: #FFFFFF;
+        line-height: 1;
+        text-align: center;
+        position: absolute;
+        margin-top: 14%;
+    }
+    &__apil {
+        background-image: url("../images/img/epil.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 465px;
+        height: 255px;
+    }
+    &__massag {
+        background-image: url("../images/img/massage.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 465px;
+        height: 255px;
+    }
+    &__lips {
+        background-image: url("../images/img/lips.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 465px;
+        height: 255px;
+    }
+    &__friend {
+        background-image: url("../images/img/friend.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 465px;
+        height: 255px;
+    }
+    &__diodsepil {
+        background-image: url("../images/img/diodoperashion.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 465px;
+        height: 255px;
+    }
+    &__btn {
+        background-color: $darkBlu;
+        border: none;
+        width: 60px;
+        height: 130px;
+        margin-top: 65px;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        &:active {
+    	    transform: scale(0.9);
+  	    }
+    }
+}
+.prew {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.next {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.activeOne, .activeTwo, .activeLast {
+    display: block;
+}
+.indication {
+    &__subtitle {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        margin-bottom: 55px;
+    }
+    &__box {
+        margin-bottom: 85px;
+    }
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    &__item {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    &__img { 
+        margin-right: 42px;
+    }
+}
+.unindication {
+    &__subtitle {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        margin-bottom: 55px;
+        max-width: 1250px;
+        line-height: 1;
+    }
+    &__box {
+        margin-bottom: 85px;
+    }
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    &__item {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        max-width: 450px;
+    }
+    &__img { 
+        margin-right: 42px;
+    }
+}
+.zapis {
+    background-color: $blu;
+    &__box {
+        background-image: url("../images/background/Subtract.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 1596px;
+        height: 527px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__zero {
+        height: 95px;
+    }
+    &__subtitle {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__text {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        max-width: 620px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__input {
+        height: 20px;
+        background: none;
+        border-radius: 50px;
+        border: 3px solid;
+        border-color: $blu;
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        padding: 20px 35px;
+    }
+    &__tel {
+        width: 430px;
+    }
+    &__name {
+        width: 265px;
+    }
+    &__form {
+        width: 1275px;
+        margin-top: 75px;
+    }
+    &__actcontent {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__rule {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+    &__note {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        margin-left: 25px;
+    }
+    &__btn {
+        background-color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        color: #FFFFFF;
+        border-radius: 50px;
+        padding: 20px 35px;
+        display: flex;
+        align-items: center;
+        border: none;
+        margin-left: auto;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        &:active {
+    	    transform: scale(0.9);
+  	    }
+    }
+    &__iconbtn {
+        margin-left: 10px;
+    }
+}
+.finder {
+    &__box {
+        margin-bottom: 80px;
+    }
+    &__subtitle {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        margin-bottom: 25px;
+    }
+}
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+    &__item {
+        margin-right: 35px;
+    }
+}
+.major {
+    &__box {
+        width: 1596px;
+        height: 805px;
+        background-image: url("../images/background/banerLip.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 50px;
+    }
+    &__title {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        max-width: 748px;
+        line-height: 1;
+    }
+}
+.banner {
+    &__box {
+        width: 1596px;
+        height: 805px;
+        background-image: url("../images/background/fonspecialist.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 50px;
+    }
+    &__title {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        max-width: 748px;
+        line-height: 1;
+    }
+}
+.variables {
+    &__subtitle {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        max-width: 748px;
+        line-height: 1;
+        margin-top: 100px;
+        margin-bottom: 70px;
+    }
+    &__block {
+        display: flex;
+        margin-bottom: 120px;
+    }
+    &__stripe {
+        height: 402px; 
+        width: 203px;
+        margin-right: 120px;
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 90px;
+        column-gap: 135px;
+    }
+    &__subTitle {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+    &__text {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        max-width: 330px;
+    }
+}
+.profil {
+    &__title {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        max-width: 748px;
+        line-height: 1;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    &__box {
+        display: flex;
+        margin-bottom: 280px;
+    }
+    &__img {
+        margin-right: 150px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__name {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    &__telnum {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 50px;
+    }
+    &__act {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+.panel {
+    &__back {
+        border: none;
+        background: none;
+        margin-top: 50px;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        &:active {
+    	    transform: scale(0.9);
+  	    }
+    }
+    &__title {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        max-width: 748px;
+        line-height: 1;
+        margin-bottom: 60px;
+        margin-top: 25px;
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
+    }
+    &__colon {
+        display: flex;
+        flex-direction: column;
+    }
+    &__subtitle {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    &__link {
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.6);
+    &__content {
+        margin: 8% auto;
+        display: block;
+        position: relative;
+        background: #EEF2FF;
+        height: 900px;
+        width: 725px;
+    }
+    &__contentAuto {
+        margin: 8% auto;
+        display: block;
+        position: relative;
+        background: #EEF2FF;
+        height: 680px;
+        width: 725px;
+    }
+    &__title {
+        color: $blu;
+        font-family: "Jost", sans-serif;
+        font-weight: 700;
+        font-size: 80px;
+        text-align: center;
+        padding-top: 60px;
+        margin-bottom: 50px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        align-items: center;
+    }
+    &__btn {
+        background-color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        color: #FFFFFF;
+        border-radius: 50px;
+        padding: 10px 35px;
+        display: flex;
+        align-items: center;
+        border: none;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+        width: 400px;
+        &:active {
+    	    transform: scale(0.9);
+  	    }
+    }
+    &__iconbtn {
+        margin-left: auto;
+    }
+    &__input {
+        height: 20px;
+        background: none;
+        border-radius: 50px;
+        border: 3px solid;
+        border-color: $blu;
+        color: $darkBlu;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        padding: 20px 35px;
+        z-index: 3;
+        width: 330px;
+        margin-bottom: 25px;
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        cursor: pointer; 
+        z-index: 4; 
+        transition: transform 0.4s ease;
+        &:active {
+    	    transform: scale(0.9);
+  	    }
+    }
+}
+.regbtn {
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:431px) {
+    .container {
+        max-width: 430px;
+        padding: 0 12px;
+    }
+    .menu {
+        &__item {
+            margin-right: 20px;
+            &:first-child {
+                margin-right: 55px;
+            }
+        }
+        &__icon {
+            max-width: 60px;
+        }
+    }
+    #finder {
+        display: none;
+    }
+    .intro {
+        margin-top: 30px;
+        &__box {
+            width: 406px;
+            height: auto;
+            background-image: none;
+        }
+        &__title {
+            font-size: 45px;
+            max-width: 360px;
+        }
+        &__text {
+            display: none;
+        }
+        &__btn {
+            display: none;
+        }
+    }
+    .about {
+        margin-top: 30px;
+        &__box {
+            display: flex;
+            flex-direction: column;
+        }
+        &__img {
+            display: none;
+        }
+        &__strip {
+            display: flex;
+            flex-direction: column;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+        &__subtitle {
+            font-size: 45px;
+            max-width: 400px;
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            margin-bottom: 10px;
+            max-width: 400px;
+        }
+        &__sec {
+            margin-left: 0px;
+        }
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__icon { 
+            margin-right: 25px;
+        }
+        &__note {
+            max-width: 275px;
+        }
+    }
+    .sale {
+        &__subtitle {
+            font-size: 45px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        &__box {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        &__active {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+        &__slide {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 60px;
+        }
+        &__slid {
+            scale: 0.8;
+        }
+        &__text {
+            font-size: 40px;
+            max-width: 320px;
+            margin-left: 15%;
+        }
+        &__btn {
+            margin-top: 0px;
+            transition: transform 0.4s ease;
+        }
+    }
+    .prew {
+        transform: rotate(90deg);
+        display: none;
+    }
+    .next {
+        transform: rotate(90deg);
+    }
+    .indication {
+        &__subtitle {
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+        &__box {
+            margin-bottom: 40px;
+        }
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__img { 
+            margin-right: 32px;
+        }
+    }
+    .unindication {
+        &__subtitle {
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+        &__box {
+            margin-bottom: 30px;
+        }
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__img { 
+            margin-right: 32px;
+        }
+    }
+    .zapis {
+        background-color: #EEF2FF;
+        &__box {
+            background-image: none;
+            width: 400px;
+            height: 527px;
+        }
+        &__zero {
+            height: 0px;
+        }
+        &__subtitle {
+            font-size: 45px;
+        }
+        &__text {
+            font-size: 18px;
+            max-width: 320px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__tel {
+            width: 325px;
+        }
+        &__name {
+            width: 325px;
+            margin-bottom: 10px;
+        }
+        &__form {
+            width: 380px;
+            margin-top: 35px;
+        }
+        &__actcontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__rule {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        &__note {
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        &__btn {
+            margin-left: 0;
+            width: 385px;
+            height: 55px;
+            margin-top: 20px;
+        }
+        &__iconbtn {
+            margin-left: auto;
+        }
+    }
+    .end {
+        padding-bottom: 22px;
+        &__item {
+            margin-right: 25px;
+        }
+        &__img {
+            max-width: 45px;
+        }
+    }
+    .major {
+        &__box {
+            width: 400px;
+            height: 100px;
+            background-image: none;
+            margin-top: 30px;
+        }
+        &__title {
+            font-size: 45px;
+        }
+    }
+    .banner {
+        &__box {
+            width: 400px;
+            height: 100px;
+            background-image: none;
+            margin-top: 30px;
+        }
+        &__title {
+            font-size: 45px;
+        }
+    }
+    .variables {
+        &__subtitle {
+            font-size: 45px;
+            max-width: 400px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__block {
+            margin-bottom: 50px;
+            justify-content: center;
+        }
+        &__stripe {
+            display: none;
+        }
+        &__box {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__subTitle {
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+    }
+    .profil {
+        &__title {
+            font-size: 45px;
+            max-width: 400px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        &__box {
+            flex-direction: column;
+            margin-bottom: 200px;
+        }
+        &__img {
+            margin-right: 0px;
+            margin-bottom: 30px;
+        }
+        &__telnum {
+            margin-bottom: 30px;
+        }
+    }
+    .panel {
+        &__back {
+            margin-top: 30px;
+        }
+        &__title {
+            font-size: 45px;
+            max-width: 400px;
+            margin-bottom: 40px;
+            margin-top: 25px;
+        }
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 30px;
+        }
+        &__colon {
+            margin-bottom: 40px;
+        }
+    }
+
+    .modal {
+        &__content {
+            height: 750px;
+            width: 350px;
+        }
+        &__contentAuto {
+            height: 570px;
+            width: 350px;
+        }
+        &__title {
+            font-size: 45px;
+            padding-top: 40px;
+            margin-bottom: 30px;
+        }
+        &__btn {
+            width: 330px;
+            height: 55px;
+            margin-top: 20px;
+        }
+        &__iconbtn {
+            margin-left: auto;
+        }
+        &__input {
+            padding: 20px 25px;
+            width: 265px;
+            margin-bottom: 25px;
+        }
+        &__icon {
+            max-width: 20px;
+        }
+    }
+    .regbtn {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}

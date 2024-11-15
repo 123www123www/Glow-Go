@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" type="images/x-icon" href="../images/icon/logo.svg">
+        <title>Glow&Go</title>
+        <script src="../js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="menu">
+                    <ul class="menu__top">
+                        <li class="menu__item"><a href="../index.html" class="menu__link"><img src="../images/icon/logo.svg" alt="icon"></a></li>
+                        <li class="menu__item"><a href="../uslugi/" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="../specialist/" class="menu__link">Наши специалисты</a></li>
+                        <li class="menu__item"><a href="/personaccount/" class="menu__link"><img src="../images/icon/cab.png" alt="icon"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="panel">
+                <div class="container">
+                    <button class="panel__back"><a href="../personaccount/"><img src="../images/icon/obratno.png" alt="icon"></a></button>
+                    <h1 class="panel__title">Админ панель</h1>
+                    <div class="panel__box">
+                        <div class="panel__colon">
+                            <h2 class="panel__subtitle">Сущности</h2>
+                            <a href="queries.php?action=employees" class="panel__link">Сотрудники</a>
+                            <a href="queries.php?action=clients" class="panel__link">Клиенты</a>
+                            <a href="queries.php?action=procedures" class="panel__link">Процедуры</a>
+                            <a href="queries.php?action=admin" class="panel__link">Админ панель</a>
+                        </div>
+                        <div class="panel__colon">
+                            <h2 class="panel__subtitle">Представления</h2>
+                            <a href="queries.php?action=services_by_type_category&type=Терапия&category=Основная" class="panel__link">1. Список и общее число услуг определенного типа и категории</a>
+                            <a href="queries.php?action=popular_services" class="panel__link">2. Самые популярные услуги</a>
+                            <a href="queries.php?action=patients_by_doctor_profile&profile=Хирург" class="panel__link">3. Пациенты у врача с профилем Хирург</a>
+                            <a href="queries.php?action=patients_by_doctor_and_date&doctorId=1&startDate=2024-01-01&endDate=2024-10-01" class="panel__link">4. Пациенты, перенесшие операции у врача за период</a>
+                            <a href="queries.php?action=new_patients" class="panel__link">5. Новые пациенты за последний месяц</a>
+                            <a href="queries.php?action=doctors_by_profile_and_experience&doctor_profile=Терапевт&min_experience=2" class="panel__link">6. Врачи с профилем Терапевт и опытом работы более 2 лет</a>
+                            <a href="queries.php?action=average_patients_per_day&doctorId=1&startDate=2024-01-01&endDate=2024-10-01" class="panel__link">7. Среднее число принятых пациентов в день</a>
+                            <a href="l.html" class="panel__link">8. Посещения кабинетов за период</a>
+                            <a href="queries.php?action=services_by_patient_and_date&patientId=1&startDate=2024-01-01&endDate=2024-10-01" class="panel__link">9. Услуги пациента за период</a>
+                            <a href="queries.php?action=payment_requests_by_service_type&serviceType=Терапия" class="panel__link">10. Запросы на оплату по типу услуги Терапия</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="end">
+                    <a href="/" class="end__link"><img src="images/icon/logo.svg" alt="icon"></a>
+                    <ul class="end__list">
+                        <li class="end__item"><a href="#" class="end__link"><img src="../images/icon/vk.png" alt="icon" class="end__img"></a></li>
+                        <li class="end__item"><a href="#" class="end__link"><img src="../images/icon/insta.png" alt="icon" class="end__img"></a></li>
+                        <li class="end__item"><a href="#" class="end__link"><img src="../images/icon/facebook.png" alt="icon" class="end__img"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
